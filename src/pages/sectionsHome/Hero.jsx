@@ -12,7 +12,6 @@ const Hero = () => {
   ];
 
   const [showHistory, setShowHistory] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
 
   const scrollToSection = (sectionId, setShowState) => {
     setShowState(true);
@@ -55,7 +54,7 @@ const Hero = () => {
             >
               Our History
             </Link>
-            <ButtonSolid nameBtn="Check Menu" to={() => scrollToSection('aboutSection', setShowHistory)} />
+            <ButtonSolid nameBtn="Check Menu" to={() => scrollToSection('menuSection', setShowHistory)} />
           </div>
         </div>
       </div>

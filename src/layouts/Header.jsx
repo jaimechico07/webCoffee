@@ -90,7 +90,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <ButtonTrans nameBtn="Reservation" />
+                  <ButtonTrans nameBtn="Reservation" to="/reservation" />
                 </li>
               </ul>
             </div>
@@ -126,7 +126,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <ButtonTrans nameBtn="Reservation" />
+              <ButtonTrans nameBtn="Reservation" to="/reservation" />
             </li>
           </ul>
         </section>

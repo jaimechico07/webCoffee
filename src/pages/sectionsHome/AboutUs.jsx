@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ButtonTrans from '../../components/ButtonTrans';
 
 const AboutUs = () => {
+  const [showHistory, setShowHistory] = useState(false);
+
+  const scrollToSection = sectionId => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleButtonClick = () => {
+    scrollToSection('meetSection');
+    setShowHistory(true); // Si deseas cambiar el estado después de hacer clic
+  };
+
   return (
     <section id="aboutSection" className="bg-[#694720] py-28 px-6  grid place-content-center ">
       <div className="max-w-[82rem]  grid grid-cols-1 lg:grid-cols-2 lg:gap-20 gap-10 place-items-center ">
@@ -29,7 +44,7 @@ const AboutUs = () => {
             The café was run by a friendly and hospitable couple, Mr. and Mrs. Johnson. Barista Cafe is free Bootstrap 5
             HTML layout provided by Tooplate.
           </p>
-          <ButtonTrans nameBtn="Meet Baristas" isIcon={true} />
+          <ButtonTrans nameBtn="Meet Baristas" isIcon={true} to={handleButtonClick} />
         </div>
       </div>
     </section>

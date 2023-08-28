@@ -4,7 +4,7 @@ const ReservationHome = () => {
   return (
     <section className="bg-back-menu bg-cover py-24 ">
       <div className="max-w-[85rem] p-6 flex justify-center flex-col lg:flex-row  w-full  mx-auto  mt-20">
-        <div className="bg-black/50 lg:p-10 p-5  rounded-l-3xl">
+        <div className="bg-black/50 lg:p-10 p-5  lg:rounded-l-3xl lg:rounded-r-none  rounded-3xl">
           <div className="mb-8 text-center">
             <p className="text-white text-sm lg:text-base italic">Fill out the booking form</p>
             <h2 className=" text-3xl md:text-5xl font-semibold text-white">Book a table</h2>
@@ -16,6 +16,7 @@ const ReservationHome = () => {
                   <input
                     className="p-3 bg-transparent border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] border-white/50 hover:bg-[#BC6C25] w-full rounded-xl outline-none transition ease-in-out duration-300"
                     type="text"
+                    required
                     placeholder="Full name"
                   />
                 </div>
@@ -23,6 +24,7 @@ const ReservationHome = () => {
                   <input
                     className="p-3 bg-transparent w-full border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] transition ease-in-out duration-300 border-white/50 hover:bg-[#BC6C25] rounded-xl outline-none"
                     type="text"
+                    required
                     placeholder="970730986"
                   />
                 </div>
@@ -32,12 +34,14 @@ const ReservationHome = () => {
                   <input
                     className="p-3 bg-transparent w-full border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] border-white/50 hover:bg-[#BC6C25] rounded-xl outline-none transition ease-in-out duration-300"
                     type="time"
+                    required
                   />
                 </div>
                 <div className="flex flex-col gap-4 text-white">
                   <input
                     className="p-3 w-full bg-transparent border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] transition ease-in-out duration-300 border-white/50 hover:bg-[#BC6C25] rounded-xl outline-none"
                     type="date"
+                    required
                   />
                 </div>
               </div>
@@ -46,6 +50,7 @@ const ReservationHome = () => {
                   <input
                     className="p-3 w-full bg-transparent border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] transition ease-in-out duration-300 border-white/50 hover:bg-[#BC6C25] rounded-xl outline-none"
                     type="number"
+                    required
                     placeholder="Number of Peopple"
                   />
                 </div>
@@ -55,7 +60,6 @@ const ReservationHome = () => {
                   className="p-3 w-full bg-transparent border-1 hover:border-[#BC6C25] focus:border-[#BC6C25] focus:bg-[#BC6C25] transition ease-in-out duration-300 border-white/50 hover:bg-[#BC6C25] rounded-xl outline-none"
                   rows="4"
                   cols="50"
-                  required
                   placeholder="Comment(Optional)"
                 ></textarea>
               </div>
@@ -73,7 +77,7 @@ const ReservationHome = () => {
         </div>
         <div>
           <img
-            className="rounded-r-3xl hidden lg:block lg:max-w-[400px] "
+            className="lg:rounded-r-3xl hidden lg:block lg:max-w-[420px] "
             src="/assets/images/Reservation/barman-with-fruits.jpg"
             alt=""
           />

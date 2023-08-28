@@ -35,7 +35,7 @@ const MeetPeople = () => {
   ];
 
   return (
-    <section className="bg-[#b78752]  ">
+    <section id="meetSection" className="bg-[#b78752]  ">
       <div className="max-w-[85rem] py-28 px-6 grid place-items-center mx-auto gap-16">
         <div>
           <p className="text-center text-white italic text-sm md:text-lg">Creative Baristas</p>
